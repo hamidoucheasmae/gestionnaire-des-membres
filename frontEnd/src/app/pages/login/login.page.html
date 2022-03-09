@@ -1,0 +1,71 @@
+<ion-header>
+  
+</ion-header>
+ 
+<ion-content padding>
+
+  <div class="background-pic">
+    <div class="background-filter">
+      <div class="shape"><img src="../../assets/shape.svg" /></div>
+  <form [formGroup]="credentialsForm" (ngSubmit)="onSubmit()">
+ 
+
+    
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+ 
+    <ion-button expand="full" type="submit" [disabled]="!credentialsForm.valid">Login</ion-button>
+ 
+  </form>
+</div>
+</div>
+</ion-content>
+<!-- <ion-header>
+
+</ion-header>
+
+<ion-content>
+  
+  <div class="background-pic">
+     <div class="background-filter">
+       <div class="shape"><img src="../../assets/shape.svg" /></div>
+
+       <ion-card>
+         <ion-card-header>
+           <ion-card-title>
+            Welcome!
+           </ion-card-title>
+           <ion-card-subtitle>
+            Time to Shop, Let's <a href="#" >Sign in</a>
+           </ion-card-subtitle>
+         </ion-card-header>
+         <ion-card-content>
+          <form [formGroup]="credentialsForm" (ngSubmit)="onSubmit()">
+            <ion-item>
+             <ion-input  type="text"  formControlName="email" placeholder="Email Adress"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input type="password" formControlName="password" placeholder="Password"></ion-input>
+            </ion-item>
+        
+
+            <div class="bottom-section">
+              <ion-button [disabled]="!credentialsForm.valid">Sign In</ion-button>
+              <span> Don't have an account ? <a href="http://localhost:8100/signup"> Sign Up</a></span>
+              
+            </div>
+          </form>
+         </ion-card-content>
+       </ion-card>
+     </div>
+  </div>
+
+
+</ion-content> -->
