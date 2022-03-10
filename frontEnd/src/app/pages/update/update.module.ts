@@ -7,18 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { UpdatePageRoutingModule } from './update-routing.module';
 
 import { UpdatePage } from './update.page';
-import { TabsComponent } from 'src/app/tabs/tabs.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    UpdatePageRoutingModule
+    UpdatePageRoutingModule,
+    ReactiveFormsModule
   ],
-  declarations: [
-    UpdatePage,
-    TabsComponent
-  ]
+  declarations: [UpdatePage]
 })
 export class UpdatePageModule {}

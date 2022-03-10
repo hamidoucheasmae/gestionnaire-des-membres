@@ -3,7 +3,7 @@ var bodyParser  = require('body-parser');
 var passport	= require('passport');
 var mongoose    = require('mongoose');
 var config      = require('./config/config');
-var port        = process.env.PORT || 5000; 
+var port        = process.env.PORT || 5001; 
 var cors        = require('cors');
  
 var app = express();
@@ -18,7 +18,7 @@ app.use(passport.initialize());
 var passportMiddleware = require('./middleware/passport');
 passport.use(passportMiddleware);
  
-// Demo Route (GET http://localhost:5000)
+// Demo Route (GET http://localhost:5001)
 app.get('/', function(req, res) {
   return res.send('Hello! The API is at http://localhost:' + port + '/api');
 });

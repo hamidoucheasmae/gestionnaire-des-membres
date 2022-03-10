@@ -35,7 +35,7 @@ const routes: Routes = [
     canActivate: [AuthGuardService]
   },
   {
-    path: 'update',
+    path: 'update/:id',
     loadChildren: () => import('./pages/update/update.module').then( m => m.UpdatePageModule)
   },
 
