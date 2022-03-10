@@ -26,12 +26,42 @@
   </ion-list>
 
 
-  <ion-row>
-    <ion-col>
-      <ion-button  routerLinkActive="tab-selected" (click)="logout()" tab="logout">LOGOUT</ion-button>
-    </ion-col>
+  <ion-row class="bottom" >
+    
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/list" tab="list">
+      <ion-icon name="list-outline"></ion-icon>
+      <ion-label>Users List</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/create" tab="create">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Add User</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLinkActive="tab-selected" (click)="logout()" tab="logout">
+      <ion-icon name="log-out-outline"></ion-icon>
+      <ion-label>Logout</ion-label>
+    </ion-tab-button>
+
   </ion-row>
   
+
  
 </ion-content>
+
+<!-- <ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/list" tab="list">
+      <ion-icon name="list-outline"></ion-icon>
+      <ion-label>Users List</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/create" tab="create">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Add User</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLinkActive="tab-selected" (click)="logout()" tab="logout">
+      <ion-icon name="log-out-outline"></ion-icon>
+      <ion-label>Logout</ion-label>
+    </ion-tab-button>
+    
+  </ion-tab-bar>
+</ion-tabs> -->
 

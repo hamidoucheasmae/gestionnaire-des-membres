@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserCrudService } from '../../services/user-crud.service';
-
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-list',
@@ -11,7 +11,7 @@ export class ListPage implements OnInit {
 
   Users: any = [];
 
-  constructor( private userCrudService: UserCrudService ) { }
+  constructor( private userCrudService: UserCrudService ,private authService: AuthService) { }
 
   ngOnInit() {
   }
@@ -33,5 +33,9 @@ export class ListPage implements OnInit {
     }
   }
 
+  logout() {
+    this.authService.logout();
+    window.location.reload() 
+   }
 
 }
