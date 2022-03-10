@@ -1,30 +1,4 @@
-// #container {
-//   text-align: center;
 
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   top: 50%;
-//   transform: translateY(-50%);
-// }
-
-// #container strong {
-//   font-size: 20px;
-//   line-height: 26px;
-// }
-
-// #container p {
-//   font-size: 16px;
-//   line-height: 22px;
-
-//   color: #8c8c8c;
-
-//   margin: 0;
-// }
-
-// #container a {
-//   text-decoration: none;
-// }
 
 ion-content{
   --ion-background-color:#fff;
@@ -35,7 +9,7 @@ ion-content{
 height: 100vh;
 width: 100%;
 display: flex;
-background: url('../../assets/home_screen_page.png');
+background: url('../../assets/home.png');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 50%;
@@ -69,7 +43,7 @@ ion-button{
     width: 180px;
     height: 60px;
     --border-radius: 40px;
-    --background: #275C3C;
+    --background: #68B8C1;
     color:#fff;
     font-weight: 400;
     text-transform: none;
@@ -82,7 +56,7 @@ ion-button{
   .background-filter{
       height: 100%;
       width: 100%;
-      background: rgba(39,92,60,0.9);
+      background: #68B8C1;
       display: flex;
       flex-direction: column;
       justify-content: center;
